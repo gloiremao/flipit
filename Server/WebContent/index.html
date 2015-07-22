@@ -1,0 +1,105 @@
+<head>
+	<title>Flipit - game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="css/default.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+	<link rel='stylesheet' type="text/css" href="css/game.css">
+</head>
+
+
+<body>
+	<div id="welcome-page">
+		<div id="mask">
+			<div id="mask_up"><!--<img src="./img/runman.gif">--></div>
+			<div id="mask_down"><p id="mask_down_p">Flip it.</p></div>
+		</div> 
+
+		<div id="top_logo" accesskey="mid"><p id="top_logo_p" >Start</p></div>
+		<div id="logo" style="display:none"></div>
+		
+		<div id="box-wrapper">
+			<div id="box" >
+				<div id="welcome" >
+					<div id="welcome_left">
+						<img src="./img/welcome.png">
+						<p id="welcome_p" style="font-size: 3em;">Flip it.</p>
+						<p>Welcome to Flip© Game Center</p>
+						<p>Connect your Smart phone devices now!!!</p>
+						<p>Supported Devices:Chrome,Firefox,Safari (Desktop)</br>(Android 4.0+/iOS 6+)Android Native Browser,Firefox Mobile,Safari Mobile(testing),Chrome Mobile(Not Supported!)  </p>
+					</div>
+					<div id="welcome_right">
+						<div id="welcome_btn_margin"></div>
+						<input class="btn" id="welcome_btn" type="button" value="Start">
+					</div>
+				</div>
+			</div>
+
+			<div id="pair_box" style="display:none;">
+				Pair Number: 
+				<input id="pair_id" type="text" placeholder="code" readonly>
+				<!---<div id="role">
+					<div id="role1" class="role_selector"></div>
+					<div id="role2" class="role_selector"></div>
+					<div id="role3" class="role_selector"></div>
+					<div id="role4" class="role_selector"></div>
+				</div>-->
+				<div id="pair-wrapper">
+					<div id="pair">
+						<div id="player1" class="pair_device"></div>
+						<div id="player2" class="pair_device"></div>
+						<div id="player3" class="pair_device"></div>
+						<div id="player4" class="pair_device"></div>
+					</div>
+					<div id="game_btn_wrapper"><input type="button" id="submit" value="Play"></div>
+				</div>
+				<!--<div id="pair_help">?</div>-->
+			</div>
+
+		</div>
+
+		<div id="footer">
+			<div id="copyright">
+				<p>Student Project | Flipit© Interactive Web Game 2015 | Computer Science, Natinonal Tsing Hua University.</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="game-page" style="display:none;">
+		<div id="bar-wrapper">
+	      <div id="bar-icon">
+	        <p>&nbspFlip</p>
+	      </div>
+	      <a href="game.html"><div id="reload_btn"class="btn"></div></a>
+	    </div>
+
+	    <div id="game-wrapper">
+	      <div id="egg">
+	        <div id="game1">
+	        </div>
+	      </div>
+	      <div id="score-wrapper">
+	        <div id='time'>60</div>
+	        <div id="score">
+	          <p>score</p>
+	        </div>
+	      </div>
+	    </div>
+
+	    <div id="game-result-wrapper" style='display:none'>
+	      <p>Game Over</p>
+	      <div id='table_wrapper'>
+	        <table id='resultTable'>
+	        </table>
+	      </div>
+	    </div>
+	</div>
+
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+
+</body>
